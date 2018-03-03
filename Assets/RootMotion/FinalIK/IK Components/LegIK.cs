@@ -3,7 +3,7 @@ using System.Collections;
 
 namespace RootMotion.FinalIK {
 	
-	// TODO [HelpURL("http://www.root-motion.com/finalikdox/html/page9.html")]
+	// TODO [HelpURLAttribute("http://www.root-motion.com/finalikdox/html/page9.html")]
 	[AddComponentMenu("Scripts/RootMotion.FinalIK/IK/Leg IK")]
 	public class LegIK : IK {
 

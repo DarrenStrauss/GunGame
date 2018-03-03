@@ -1,0 +1,153 @@
+fileFormatVersion: 2
+guid: 6a478594264e2fa43a36455804f3085c
+timeCreated: 1508931933
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Body
+    100004: Bullets
+    100006: Ejector
+    100008: Ejector_end
+    100010: Magazine
+    100012: Magazine 1
+    100014: Magazine_end
+    100016: Plane
+    100018: Rangefinder
+    100020: Rangefinder 1
+    100022: Rangefinder_end
+    100024: Rifle
+    100026: Scope
+    100028: Scope 1
+    100030: Scope_end
+    100032: Stand
+    100034: Stand 1
+    100036: Stand_end
+    100038: Switch
+    100040: Switch_end
+    100042: Switcher
+    100044: Trigger
+    100046: Trigger 1
+    100048: Trigger_end
+    100050: //RootNode
+    400000: Armature
+    400002: Body
+    400004: Bullets
+    400006: Ejector
+    400008: Ejector_end
+    400010: Magazine
+    400012: Magazine 1
+    400014: Magazine_end
+    400016: Plane
+    400018: Rangefinder
+    400020: Rangefinder 1
+    400022: Rangefinder_end
+    400024: Rifle
+    400026: Scope
+    400028: Scope 1
+    400030: Scope_end
+    400032: Stand
+    400034: Stand 1
+    400036: Stand_end
+    400038: Switch
+    400040: Switch_end
+    400042: Switcher
+    400044: Trigger
+    400046: Trigger 1
+    400048: Trigger_end
+    400050: //RootNode
+    4300000: Bullets
+    4300002: Magazine
+    4300004: Plane
+    4300006: Rangefinder
+    4300008: Rifle
+    4300010: Scope
+    4300012: Stand
+    4300014: Switcher
+    4300016: Trigger
+    9500000: //RootNode
+    13700000: Bullets
+    13700002: Magazine
+    13700004: Plane
+    13700006: Rangefinder
+    13700008: Rifle
+    13700010: Scope
+    13700012: Stand
+    13700014: Switcher
+    13700016: Trigger
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

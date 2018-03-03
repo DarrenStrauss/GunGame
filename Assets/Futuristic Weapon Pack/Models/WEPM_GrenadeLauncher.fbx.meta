@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: 5e6f8564047570e448430b228919f7b4
+timeCreated: 1497352601
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Barrel
+    100002: Cylinder
+    100004: GrenadeLauncher
+    100006: //RootNode
+    100008: Grenades
+    100010: Trigger
+    100012: Grenade
+    100014: Grenade Chamber
+    100016: Grenade.001
+    100018: Grenade.002
+    100020: Grenade.003
+    100022: Armature
+    100024: barrel_bone
+    100026: barrel_bone_end
+    100028: body_bone
+    100030: grenade_bone
+    100032: grenade_bone.001
+    100034: grenade_bone.001_end
+    100036: grenade_bone.002
+    100038: grenade_bone.002_end
+    100040: grenade_bone.003
+    100042: grenade_bone.003_end
+    100044: grenade_bone_end
+    100046: trigger_bone
+    100048: trigger_bone_end
+    400000: Barrel
+    400002: Cylinder
+    400004: GrenadeLauncher
+    400006: //RootNode
+    400008: Grenades
+    400010: Trigger
+    400012: Grenade
+    400014: Grenade Chamber
+    400016: Grenade.001
+    400018: Grenade.002
+    400020: Grenade.003
+    400022: Armature
+    400024: barrel_bone
+    400026: barrel_bone_end
+    400028: body_bone
+    400030: grenade_bone
+    400032: grenade_bone.001
+    400034: grenade_bone.001_end
+    400036: grenade_bone.002
+    400038: grenade_bone.002_end
+    400040: grenade_bone.003
+    400042: grenade_bone.003_end
+    400044: grenade_bone_end
+    400046: trigger_bone
+    400048: trigger_bone_end
+    2300000: Barrel
+    2300002: Cylinder
+    2300004: GrenadeLauncher
+    2300006: Grenades
+    2300008: Trigger
+    2300010: Grenade
+    2300012: Grenade Chamber
+    2300014: Grenade.001
+    2300016: Grenade.002
+    2300018: Grenade.003
+    3300000: Barrel
+    3300002: Cylinder
+    3300004: GrenadeLauncher
+    3300006: Grenades
+    3300008: Trigger
+    3300010: Grenade
+    3300012: Grenade Chamber
+    3300014: Grenade.001
+    3300016: Grenade.002
+    3300018: Grenade.003
+    4300000: Cylinder
+    4300002: GrenadeLauncher
+    4300004: Trigger
+    4300006: Grenades
+    4300008: Barrel
+    4300010: Grenade.003
+    4300012: Grenade.002
+    4300014: Grenade.001
+    4300016: Grenade
+    4300018: Grenade Chamber
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,187 @@
+fileFormatVersion: 2
+guid: 4d3fe0625282e09408531331d11e304e
+timeCreated: 1504686198
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Armature
+    100002: body_bone
+    100004: Bullet
+    100006: Bullet.001
+    100008: Bullet.002
+    100010: Bullet.003
+    100012: Bullet.004
+    100014: Bullet.005
+    100016: Bullet.006
+    100018: Bullet.007
+    100020: bullet_bone
+    100022: bullet_bone.001
+    100024: bullet_bone.001_end
+    100026: bullet_bone.002
+    100028: bullet_bone.002_end
+    100030: bullet_bone.003
+    100032: bullet_bone.003_end
+    100034: bullet_bone.004
+    100036: bullet_bone.004_end
+    100038: bullet_bone.005
+    100040: bullet_bone.005_end
+    100042: bullet_bone.006
+    100044: bullet_bone.006_end
+    100046: bullet_bone.007
+    100048: bullet_bone.007_end
+    100050: bullet_bone_end
+    100052: Camera
+    100054: Cylinder
+    100056: cylinder_bone
+    100058: cylinder_bone_end
+    100060: Hook
+    100062: hook_bone
+    100064: hook_bone_end
+    100066: Lamp
+    100068: Revolver
+    100070: //RootNode
+    100072: Trigger
+    100074: trigger_bone
+    100076: trigger_bone_end
+    400000: Armature
+    400002: body_bone
+    400004: Bullet
+    400006: Bullet.001
+    400008: Bullet.002
+    400010: Bullet.003
+    400012: Bullet.004
+    400014: Bullet.005
+    400016: Bullet.006
+    400018: Bullet.007
+    400020: bullet_bone
+    400022: bullet_bone.001
+    400024: bullet_bone.001_end
+    400026: bullet_bone.002
+    400028: bullet_bone.002_end
+    400030: bullet_bone.003
+    400032: bullet_bone.003_end
+    400034: bullet_bone.004
+    400036: bullet_bone.004_end
+    400038: bullet_bone.005
+    400040: bullet_bone.005_end
+    400042: bullet_bone.006
+    400044: bullet_bone.006_end
+    400046: bullet_bone.007
+    400048: bullet_bone.007_end
+    400050: bullet_bone_end
+    400052: Camera
+    400054: Cylinder
+    400056: cylinder_bone
+    400058: cylinder_bone_end
+    400060: Hook
+    400062: hook_bone
+    400064: hook_bone_end
+    400066: Lamp
+    400068: Revolver
+    400070: //RootNode
+    400072: Trigger
+    400074: trigger_bone
+    400076: trigger_bone_end
+    2000000: Camera
+    4300000: Revolver
+    4300002: Trigger
+    4300004: Hook
+    4300006: Cylinder
+    4300008: Bullet.007
+    4300010: Bullet.006
+    4300012: Bullet.005
+    4300014: Bullet.004
+    4300016: Bullet.003
+    4300018: Bullet.002
+    4300020: Bullet
+    4300022: Bullet.001
+    9500000: //RootNode
+    10800000: Lamp
+    13700000: Bullet
+    13700002: Bullet.001
+    13700004: Bullet.002
+    13700006: Bullet.003
+    13700008: Bullet.004
+    13700010: Bullet.005
+    13700012: Bullet.006
+    13700014: Bullet.007
+    13700016: Cylinder
+    13700018: Hook
+    13700020: Revolver
+    13700022: Trigger
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

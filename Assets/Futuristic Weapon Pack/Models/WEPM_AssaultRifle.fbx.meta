@@ -1,0 +1,136 @@
+fileFormatVersion: 2
+guid: 1f8873b0a40d03b40a7b8136a0353eda
+timeCreated: 1497181020
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: //RootNode
+    100004: AssaultRifle
+    100006: body_bone
+    100008: Cylinder
+    100010: cylinder_bone
+    100012: cylinder_bone_end
+    100014: Ironsight
+    100016: ironsight_bone
+    100018: ironsight_bone_end
+    100020: Magazine
+    100022: magazine_bone
+    100024: magazine_bone_end
+    100026: ShootingModeSwitcher
+    100028: Sight
+    100030: sight_bone
+    100032: sight_bone_end
+    100034: switch_bone
+    100036: switch_bone_end
+    100038: Trigger
+    100040: trigger_bone
+    100042: trigger_bone_end
+    400000: Armature
+    400002: AssaultRifle
+    400004: //RootNode
+    400006: body_bone
+    400008: Cylinder
+    400010: cylinder_bone
+    400012: cylinder_bone_end
+    400014: Ironsight
+    400016: ironsight_bone
+    400018: ironsight_bone_end
+    400020: Magazine
+    400022: magazine_bone
+    400024: magazine_bone_end
+    400026: ShootingModeSwitcher
+    400028: Sight
+    400030: sight_bone
+    400032: sight_bone_end
+    400034: switch_bone
+    400036: switch_bone_end
+    400038: Trigger
+    400040: trigger_bone
+    400042: trigger_bone_end
+    4300000: AssaultRifle
+    4300002: Cylinder
+    4300004: Ironsight
+    4300006: Magazine
+    4300008: ShootingModeSwitcher
+    4300010: Sight
+    4300012: Trigger
+    9500000: //RootNode
+    13700000: AssaultRifle
+    13700002: Cylinder
+    13700004: Ironsight
+    13700006: Magazine
+    13700008: ShootingModeSwitcher
+    13700010: Sight
+    13700012: Trigger
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

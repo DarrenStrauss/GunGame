@@ -1,0 +1,132 @@
+fileFormatVersion: 2
+guid: 822325c4607283a489b648509e6ed8f7
+timeCreated: 1497351314
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: body_bone
+    100004: Lamp
+    100006: Magazine
+    100008: magazine_bone
+    100010: magazine_bone_end
+    100012: Optics
+    100014: optics bone
+    100016: optics bone_end
+    100018: Prop
+    100020: prop_bone
+    100022: prop_bone_end
+    100024: //RootNode
+    100026: SniperRifle
+    100028: Trigger
+    100030: trigger_bone
+    100032: trigger_bone_end
+    400000: Armature
+    400002: body_bone
+    400004: Lamp
+    400006: Magazine
+    400008: magazine_bone
+    400010: magazine_bone_end
+    400012: Optics
+    400014: optics bone
+    400016: optics bone_end
+    400018: Prop
+    400020: prop_bone
+    400022: prop_bone_end
+    400024: SniperRifle
+    400026: //RootNode
+    400028: Trigger
+    400030: trigger_bone
+    400032: trigger_bone_end
+    2300000: Magazine
+    2300002: Optics
+    2300004: Prop
+    2300006: SniperRifle
+    2300008: Trigger
+    3300000: Magazine
+    3300002: Optics
+    3300004: Prop
+    3300006: SniperRifle
+    3300008: Trigger
+    4300000: SniperRifle
+    4300002: Magazine
+    4300004: Optics
+    4300006: Prop
+    4300008: Trigger
+    9500000: //RootNode
+    13700000: Magazine
+    13700002: Optics
+    13700004: Prop
+    13700006: SniperRifle
+    13700008: Trigger
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

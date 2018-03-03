@@ -1,0 +1,165 @@
+fileFormatVersion: 2
+guid: 291d151d6d894ed42afb72ed35641065
+timeCreated: 1508929196
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Armature
+    100002: Body
+    100004: Ejector
+    100006: Ejector 1
+    100008: Ejector_end
+    100010: FireModSwitch
+    100012: Flashlight
+    100014: Flashlight 1
+    100016: Flashlight_end
+    100018: Foregrip
+    100020: Foregrip_end
+    100022: HandGrip
+    100024: IronSight
+    100026: IronSight.001
+    100028: IronSight.002
+    100030: Magazine
+    100032: Magazine 1
+    100034: Magazine_end
+    100036: Rifle
+    100038: Scope
+    100040: Scope 1
+    100042: Scope_end
+    100044: Suppressor
+    100046: Switch
+    100048: Switch_end
+    100050: Trigger
+    100052: Trigger 1
+    100054: Trigger_end
+    100056: //RootNode
+    400000: Armature
+    400002: Body
+    400004: Ejector
+    400006: Ejector 1
+    400008: Ejector_end
+    400010: FireModSwitch
+    400012: Flashlight
+    400014: Flashlight 1
+    400016: Flashlight_end
+    400018: Foregrip
+    400020: Foregrip_end
+    400022: HandGrip
+    400024: IronSight
+    400026: IronSight.001
+    400028: IronSight.002
+    400030: Magazine
+    400032: Magazine 1
+    400034: Magazine_end
+    400036: Rifle
+    400038: Scope
+    400040: Scope 1
+    400042: Scope_end
+    400044: Suppressor
+    400046: Switch
+    400048: Switch_end
+    400050: Trigger
+    400052: Trigger 1
+    400054: Trigger_end
+    400056: //RootNode
+    4300000: Ejector
+    4300002: FireModSwitch
+    4300004: Flashlight
+    4300006: HandGrip
+    4300008: IronSight
+    4300010: IronSight.001
+    4300012: IronSight.002
+    4300014: Magazine
+    4300016: Rifle
+    4300018: Scope
+    4300020: Suppressor
+    4300022: Trigger
+    9500000: //RootNode
+    13700000: Ejector
+    13700002: FireModSwitch
+    13700004: Flashlight
+    13700006: HandGrip
+    13700008: IronSight
+    13700010: IronSight.001
+    13700012: IronSight.002
+    13700014: Magazine
+    13700016: Rifle
+    13700018: Scope
+    13700020: Suppressor
+    13700022: Trigger
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

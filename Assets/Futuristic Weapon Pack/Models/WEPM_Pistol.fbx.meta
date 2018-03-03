@@ -1,0 +1,112 @@
+fileFormatVersion: 2
+guid: fd6eb9e0cb5440442a6816c96a4345f4
+timeCreated: 1497465826
+licenseType: Store
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: Armature
+    100002: body_bone
+    100004: Magazine
+    100006: magazine_bone
+    100008: magazine_bone_end
+    100010: Pipe
+    100012: pipe_bone
+    100014: pipe_bone_end
+    100016: //RootNode
+    100018: Pistol
+    100020: Trigger
+    100022: trigger_bone
+    100024: trigger_bone_end
+    400000: Armature
+    400002: body_bone
+    400004: Magazine
+    400006: magazine_bone
+    400008: magazine_bone_end
+    400010: Pipe
+    400012: pipe_bone
+    400014: pipe_bone_end
+    400016: //RootNode
+    400018: Pistol
+    400020: Trigger
+    400022: trigger_bone
+    400024: trigger_bone_end
+    4300000: Magazine
+    4300002: Pipe
+    4300004: Pistol
+    4300006: Trigger
+    9500000: //RootNode
+    13700000: Magazine
+    13700002: Pipe
+    13700004: Pistol
+    13700006: Trigger
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

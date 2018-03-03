@@ -1,0 +1,11 @@
+///////////////////////////////////////////////////////////
+// Component Preset Script
+///////////////////////////////////////////////////////////
+
+ComponentType vp_FPWeapon
+PositionOffset 0.1493672 -0.38 0.24
+PositionPivot 0 -0.0967463 -0.5083786
+RotationOffset -12.8 -23.5 -36.6
+RotationSpringStiffness 0.005
+RotationSpringDamping 0.25192308
+RenderingFieldOfView 35

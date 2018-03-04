@@ -4,11 +4,11 @@
 
 ComponentType vp_FPWeapon
 RenderingClippingPlanes 0.05 10
-PositionOffset 0 -0.25 0
-RotationOffset -1.4 0 0
+PositionOffset -0.0003 -0.042 0.79
+RotationOffset 0.1 0 0
 RotationSpringStiffness 0.025
 RotationSpringDamping 0.35
-ShakeSpeed 0.05
+ShakeSpeed 0
 ShakeAmplitude 0.5 0 0
 RenderingFieldOfView 20
 RenderingZoomDamping 0.1

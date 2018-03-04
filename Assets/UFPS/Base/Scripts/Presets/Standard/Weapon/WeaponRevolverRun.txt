@@ -3,7 +3,7 @@
 ///////////////////////////////////////////////////////////
 
 ComponentType vp_FPWeapon
-PositionOffset 0.16 -0.21 0.496078
+PositionOffset 0.18 -0.065 0.9
 RenderingClippingPlanes 0.36 10
 PositionSpringDamping 0.55
 PositionFallRetract 0
@@ -11,8 +11,8 @@ PositionPivotSpringDamping 0.55
 PositionWalkSlide 1 1 0.5
 PositionPivotSpringStiffness 0.025
 PositionPivotSpringDamping 0.5
-PositionPivot -0.0525 -0.015 -0.2741375
-RotationOffset 19.92 -6 0
+PositionPivot -0.02 0.06 0.18
+RotationOffset 16.91 -16.4 0
 RotationSpringDamping 0.55
 RotationLookSway 2 0.5 0
 RotationFallSway 2 0 -3

@@ -15,12 +15,23 @@ public class IKHandler : MonoBehaviour {
         bodyIK = GetComponent<FullBodyBipedIK>();        
 
         eventHandler = transform.GetComponentInParent<vp_FPPlayerEventHandler>();
+        
+    }
+
+    void OnEnable()
+    {
         eventHandler.Register(this);
     }
 
-	void Start () {
+    void OnDisable()
+    {
+        eventHandler.Unregister(this);
+    }
+
+    void Start () {
         weaponChanged = false;
     }
+
 
     void LateUpdate()
     {

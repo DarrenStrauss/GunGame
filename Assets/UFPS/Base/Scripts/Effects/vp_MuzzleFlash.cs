@@ -15,6 +15,8 @@ using UnityEngine;
 
 public class vp_MuzzleFlash : MonoBehaviour
 {
+    [SerializeField]
+    private Material flashMaterial;
 
 	protected float m_FadeSpeed = 0.075f;				// amount of alpha to be deducted each frame
 	protected bool m_ForceShow = false;					// used to set the muzzleflash 'always on' in the editor
@@ -53,7 +55,7 @@ public class vp_MuzzleFlash : MonoBehaviour
 		m_Renderer = GetComponent<Renderer>();
 		if (m_Renderer != null)
 		{
-			m_Material = m_Renderer.material;
+			m_Material = flashMaterial;
 			if (m_Material != null)
 			{
 				// the muzzleflash is meant to use the 'Particles/Additive'
@@ -125,6 +127,7 @@ public class vp_MuzzleFlash : MonoBehaviour
 	/// </summary>
 	public void Show()
 	{
+        m_Renderer.material = flashMaterial;
 		m_Renderer.enabled = true;
 		if (m_Light != null)
 		{
@@ -140,6 +143,7 @@ public class vp_MuzzleFlash : MonoBehaviour
 	/// </summary>
 	public void Shoot()
 	{
+        m_Renderer.material = flashMaterial;
 		ShootInternal(true);
 	}
 

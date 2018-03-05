@@ -2,20 +2,20 @@
 using RootMotion.FinalIK;
 
 public class IKHandler : MonoBehaviour {
+    [SerializeField]
+    private GameObject weapons;
+
     private AimIK aimIk;
     private FullBodyBipedIK bodyIK;    
     private vp_FPPlayerEventHandler eventHandler;
     private WeaponIK currentWeaponIK;
-
-    private bool weaponChanged;
 
     void Awake()
     {
         aimIk = GetComponent<AimIK>();
         bodyIK = GetComponent<FullBodyBipedIK>();        
 
-        eventHandler = transform.GetComponentInParent<vp_FPPlayerEventHandler>();
-        
+        eventHandler = transform.GetComponentInParent<vp_FPPlayerEventHandler>();        
     }
 
     void OnEnable()
@@ -28,33 +28,24 @@ public class IKHandler : MonoBehaviour {
         eventHandler.Unregister(this);
     }
 
-    void Start () {
-        weaponChanged = false;
-    }
-
-
-    void LateUpdate()
+    void OnStart_SetWeapon()
     {
-        if (weaponChanged)
-        {
-            if (!aimIk.enabled || !bodyIK.enabled)
-            {
-                aimIk.enabled = true;
-                bodyIK.enabled = true;
-            }
-
-            currentWeaponIK = GameObject.FindGameObjectWithTag(eventHandler.CurrentWeaponName.Get()).GetComponent<WeaponIK>();
-            SetAimTarget();
-            SetLeftHandTarget();
-
-            weaponChanged = false;
-        }
-        
+        aimIk.enabled = false;
+        bodyIK.enabled = false;
     }
 
     void OnStop_SetWeapon()
     {
-        weaponChanged = true;
+        if (!aimIk.enabled || !bodyIK.enabled)
+        {
+            aimIk.enabled = true;
+            bodyIK.enabled = true;
+        }
+
+        int currentWeaponIndex = (int)eventHandler.SetWeapon.Argument - 1;
+        currentWeaponIK = weapons.transform.GetChild(currentWeaponIndex).GetComponent<WeaponIK>();
+        SetAimTarget();
+        SetLeftHandTarget();
     }
 
     void OnStart_Reload()

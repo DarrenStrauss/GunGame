@@ -1039,7 +1039,7 @@ public class vp_FPWeapon : vp_Weapon
 	/// </summary>
 	public override void Deactivate()
 	{
-
+        
 		m_Wielded = false;
 		if (m_WeaponGroup != null)
 		{

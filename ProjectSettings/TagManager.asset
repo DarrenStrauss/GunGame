@@ -9,6 +9,7 @@ TagManager:
   - Stone
   - Weapon1Pistol
   - 1Pistol
+  - 2Revolver
   layers:
   - Default
   - TransparentFX

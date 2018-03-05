@@ -535,10 +535,26 @@ public class vp_Weapon : vp_Component
 			return;
 
 		if (visible)
-			Weapon3rdPersonModelRenderer.materials = m_VisibleMaterials;		// 3rd person: render dummy weapon normally
-		else
-			Weapon3rdPersonModelRenderer.materials = m_InvisibleMaterials;		// 1st person: render dummy weapon invisible, but casting a shadow
+        {
+            Weapon3rdPersonModelRenderer.materials = m_VisibleMaterials;        // 3rd person: render dummy weapon normally
+            Renderer[] childRenderes = Weapon3rdPersonModel.GetComponentsInChildren<Renderer>();
 
+            foreach (Renderer renderer in childRenderes)
+            {
+                renderer.materials = m_VisibleMaterials;
+            }
+
+        }
+        else
+        {
+            Weapon3rdPersonModelRenderer.materials = m_InvisibleMaterials;		// 1st person: render dummy weapon invisible, but casting a shadow
+            Renderer[] childRenderes = Weapon3rdPersonModel.GetComponentsInChildren<Renderer>();
+
+            foreach (Renderer renderer in childRenderes)
+            {
+                renderer.materials = m_InvisibleMaterials;
+            }
+        }
 	}
 
 

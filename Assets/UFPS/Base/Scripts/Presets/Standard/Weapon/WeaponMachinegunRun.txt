@@ -3,7 +3,7 @@
 ///////////////////////////////////////////////////////////
 
 ComponentType vp_FPWeapon
-RenderingClippingPlanes 0.36 10
+RenderingClippingPlanes 0.2 10
 PositionOffset 0.1357806 -0.175 0.2237036
 PositionSpringDamping 0.55
 PositionFallRetract 0

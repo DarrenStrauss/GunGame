@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc8bc753e6c65b40bfca961906f4480, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flashMaterial: {fileID: 2100000, guid: fd16f7a1d3afa8248bf6451fe042be38, type: 2}
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6

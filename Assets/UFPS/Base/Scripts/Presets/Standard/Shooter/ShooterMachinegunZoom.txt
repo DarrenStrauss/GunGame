@@ -8,5 +8,5 @@ ShellEjectDirection 1 1 0.5
 ShellEjectPosition 0.02 -0.02 0.5
 ShellEjectVelocity 0.25
 ProjectileSpread 2.2
-MotionRotationRecoil -0.5 0 2
-MotionRotationRecoilDeadZone 0.5
+MotionRotationRecoil -0.1 0 0.1
+MotionRotationRecoilDeadZone 0.1

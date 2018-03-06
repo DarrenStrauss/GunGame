@@ -43,9 +43,19 @@ public class IKHandler : MonoBehaviour {
         }
 
         int currentWeaponIndex = (int)eventHandler.SetWeapon.Argument - 1;
-        currentWeaponIK = weapons.transform.GetChild(currentWeaponIndex).GetComponent<WeaponIK>();
-        SetAimTarget();
-        SetLeftHandTarget();
+
+        try
+        {
+            currentWeaponIK = weapons.transform.GetChild(currentWeaponIndex).GetComponent<WeaponIK>();
+            SetAimTarget();
+            SetLeftHandTarget();
+        }
+        catch
+        {
+            aimIk.enabled = false;
+            bodyIK.enabled = false;
+            eventHandler.Unregister(this);
+        }        
     }
 
     void OnStart_Reload()

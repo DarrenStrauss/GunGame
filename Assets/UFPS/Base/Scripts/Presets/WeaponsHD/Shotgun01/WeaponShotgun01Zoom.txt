@@ -3,12 +3,12 @@
 ///////////////////////////////////////////////////////////
 
 ComponentType vp_FPWeapon
-ShakeSpeed 0.4
+ShakeSpeed 0
 ShakeAmplitude 0.025 0 0.045
-RenderingFieldOfView 12
+//RenderingFieldOfView 12
 RenderingZoomDamping 0.5
-PositionOffset -0.3127 -0.453 0.53
-RotationOffset -0.52 5.58 0
+PositionOffset 0.001 -0.03 0.4
+RotationOffset 0.05 0.022 0
 PositionSpringStiffness 0.15
 PositionSpringDamping 0.65
 PositionPivotSpringStiffness 0.75

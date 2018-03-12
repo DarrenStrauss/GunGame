@@ -8,7 +8,7 @@ ShakeAmplitude 0.1 0.15 0.7
 RotationSpringStiffness 0.005
 RotationSpringDamping 0.146
 RenderingFieldOfView 35
-PositionOffset -0.2 -0.54 0.48
+PositionOffset -0.06 -0.13 0.32
 RenderingClippingPlanes 0.01 10
 RotationOffset -4.4 0.71 0
 PositionSpringDamping 0.364

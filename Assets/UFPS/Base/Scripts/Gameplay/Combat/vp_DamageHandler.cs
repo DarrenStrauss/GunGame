@@ -227,7 +227,7 @@ public class vp_DamageHandler : MonoBehaviour
 	public virtual void Damage(vp_DamageInfo damageInfo)
 	{
 
-		if (!enabled)
+        /*if (!enabled)
 			return;
 
 		if (!vp_Utility.IsActive(gameObject))
@@ -272,9 +272,20 @@ public class vp_DamageHandler : MonoBehaviour
 				SendMessage("Die");
 			else
 				vp_Timer.In(UnityEngine.Random.Range(MinDeathDelay, MaxDeathDelay), delegate() { SendMessage("Die"); });
-		}
+		} */
 
-	}
+        gameObject.GetComponent<Animator>().enabled = false;
+        foreach (Rigidbody rb in transform.GetComponentsInChildren<Rigidbody>())
+        {
+            rb.isKinematic = false;
+            rb.AddForce(new Vector3(0f, 10f, -30f), ForceMode.Impulse);
+        }
+
+        //GameObject.Find("Ribs").GetComponent<Rigidbody>().AddForce(new Vector3(0f,100f,-300f), ForceMode.Impulse);
+        //Reset();
+
+
+    }
 
 
 	/// <summary>
@@ -348,8 +359,8 @@ public class vp_DamageHandler : MonoBehaviour
 
 		if (Respawner == null)
 		{
-			vp_Utility.Destroy(gameObject);
-		}
+            vp_Utility.Destroy(gameObject);
+        }
 		else
 		{
 			RemoveBulletHoles();

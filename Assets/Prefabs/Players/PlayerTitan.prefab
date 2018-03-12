@@ -593,7 +593,7 @@ GameObject:
   - component: {fileID: 114980796956548850}
   - component: {fileID: 114051412269585730}
   m_Layer: 0
-  m_Name: 4Mace
+  m_Name: 5Mace
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1611,7 +1611,7 @@ GameObject:
   - component: {fileID: 23950205976365806}
   - component: {fileID: 114928822572587416}
   m_Layer: 0
-  m_Name: AssaultRifle
+  m_Name: 3AssaultRifle
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1971,6 +1971,26 @@ GameObject:
   - component: {fileID: 4541157720743916}
   m_Layer: 0
   m_Name: Bip001 R Finger2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1853923770677944
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4941153581966122}
+  - component: {fileID: 82347029729506626}
+  - component: {fileID: 114147003110227684}
+  - component: {fileID: 114080722880444724}
+  - component: {fileID: 114487979190335398}
+  - component: {fileID: 114572751571646866}
+  m_Layer: 0
+  m_Name: 4Shotgun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2913,7 +2933,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4547067070805024}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4357687031276478
 Transform:
@@ -3124,7 +3144,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1232558797361372}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -7.666}
+  m_LocalPosition: {x: -4.32, y: 0, z: -7.666}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4547067070805024}
@@ -3157,7 +3177,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4547067070805024}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4498610531358388
 Transform:
@@ -3296,6 +3316,7 @@ Transform:
   - {fileID: 4148691385790656}
   - {fileID: 4723599317092858}
   - {fileID: 4658893852631802}
+  - {fileID: 4941153581966122}
   - {fileID: 4479203267343178}
   - {fileID: 4337592944824116}
   m_Father: {fileID: 4460073878751230}
@@ -4151,6 +4172,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 4882471182748896}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4941153581966122
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1853923770677944}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 2.125512, y: -0.000000059604645, z: 10.389781}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4547067070805024}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4950938104091096
 Transform:
@@ -5163,6 +5197,86 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!82 &82347029729506626
+AudioSource:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1853923770677944}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    - serializedVersion: 2
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 2
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!82 &82489180959889904
 AudioSource:
   m_ObjectHideFlags: 1
@@ -5503,6 +5617,75 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weapons: {fileID: 1556141777229414}
+--- !u!114 &114080722880444724
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1853923770677944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3320cb8b89dc2547959c4c6e6621e03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Persist: 0
+  States:
+  - TypeName: vp_FPWeaponShooter
+    Name: Zoom
+    TextAsset: {fileID: 4900000, guid: 47c858649593387498fc9a70a37dadcc, type: 3}
+    StatesToBlock: 
+  - TypeName: vp_FPWeaponShooter
+    Name: Default
+    TextAsset: {fileID: 0}
+    StatesToBlock: 
+  Children: []
+  Siblings: []
+  Family: []
+  Renderers: []
+  AudioSources: []
+  m_ProjectileSpawnPoint: {fileID: 0}
+  ProjectilePrefab: {fileID: 100000, guid: 3513cfb9cf3f9014f85f2373081d1b23, type: 2}
+  ProjectileScale: 0.5
+  ProjectileFiringRate: 1
+  ProjectileSpawnDelay: 0
+  ProjectileCount: 7
+  ProjectileSpread: 6
+  ProjectileSourceIsRoot: 1
+  FireMessage: 
+  MuzzleFlashPosition: {x: 0, y: 0.03, z: 1.56}
+  MuzzleFlashScale: {x: 0.5, y: 0.5, z: 0.5}
+  MuzzleFlashFadeSpeed: 0.075
+  MuzzleFlashPrefab: {fileID: 100000, guid: 470a2ddd0e07d5f4088b9078e2392bb5, type: 2}
+  MuzzleFlashDelay: 0
+  m_MuzzleFlashSpawnPoint: {fileID: 0}
+  ShellPrefab: {fileID: 100000, guid: bd5c546c114c3994b9a2e34bf067db08, type: 2}
+  ShellScale: 1
+  ShellEjectDirection: {x: 2, y: 1, z: 1}
+  ShellEjectPosition: {x: 0.1, y: -0.1, z: 0.35}
+  ShellEjectVelocity: 0.2
+  ShellEjectDelay: 0.5
+  ShellEjectSpin: 1
+  m_ShellEjectSpawnPoint: {fileID: 0}
+  SoundFire: {fileID: 8300000, guid: 543693ab49a4ddf4aaa0702ebf7db732, type: 3}
+  SoundFireDelay: 0
+  SoundFirePitch: {x: 1, y: 1}
+  FirePosition: {x: 0, y: 0, z: 0}
+  ProjectileTapFiringRate: 1
+  MotionPositionRecoil: {x: 0.01, y: 0, z: -0.085}
+  MotionRotationRecoil: {x: -2, y: 0, z: 0}
+  MotionRotationRecoilDeadZone: 0
+  MotionDryFireRecoil: -0.065
+  MotionRecoilDelay: 0
+  MuzzleFlashFirstShotMaxDeviation: 180
+  SoundDryFire: {fileID: 8300000, guid: 909753eaf51f93d4995cd25c2822fef7, type: 3}
+  MotionPositionReset: 1
+  MotionRotationReset: 1
+  MotionPositionPause: 1
+  MotionRotationPause: 1
+  MotionRotationRecoilCameraFactor: 0
+  MotionPositionRecoilCameraFactor: 0.25
+  AnimationFire: {fileID: 0}
+  AnimationOutOfAmmo: {fileID: 0}
 --- !u!114 &114094583253956562
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5768,6 +5951,8 @@ MonoBehaviour:
   - {fileID: 114832690955946112}
   - {fileID: 114753856937272018}
   - {fileID: 114893219373289410}
+  - {fileID: 114147003110227684}
+  - {fileID: 114080722880444724}
   - {fileID: 114829723641822194}
   - {fileID: 114094583253956562}
   - {fileID: 114051412269585730}
@@ -5786,10 +5971,10 @@ MonoBehaviour:
   Weapon3rdPersonModel: {fileID: 1713624133745334}
   Weapon3rdPersonInvisibleMaterial: {fileID: 2100000, guid: 79493f8f538fb764b989fc1cc9c818f7,
     type: 2}
-  PositionOffset: {x: 0.2007197, y: -0.2370774, z: 0.13}
+  PositionOffset: {x: 0.18, y: -0.24, z: 0.13}
   PositionSpring2Stiffness: 0.942029
   PositionSpring2Damping: 0.5362319
-  RotationOffset: {x: -2.980886, y: -5, z: 0}
+  RotationOffset: {x: -2.51, y: -2.98, z: 0}
   RotationSpring2Stiffness: 0.95
   RotationSpring2Damping: 0.9456522
   AnimationType: 1
@@ -5859,6 +6044,153 @@ MonoBehaviour:
   AmbientInterval: {x: 2.5, y: 7.5}
   PositionExitOffset: {x: 0, y: -1, z: 0}
   RotationExitOffset: {x: 40, y: 0, z: 0}
+  DoSpringsInLateUpdate: 0
+--- !u!114 &114147003110227684
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1853923770677944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8227215081904e84a97ab858e04ca55d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Persist: 0
+  States:
+  - TypeName: vp_FPWeapon
+    Name: Reload
+    TextAsset: {fileID: 4900000, guid: cefefdd0572be79468d9dbcf6c99d4d2, type: 3}
+    StatesToBlock: 040000000300000005000000
+  - TypeName: vp_FPWeapon
+    Name: Zoom
+    TextAsset: {fileID: 4900000, guid: 750ce9390289c47459eda0392ef85546, type: 3}
+    StatesToBlock: 0300000004000000
+  - TypeName: vp_FPWeapon
+    Name: Slide
+    TextAsset: {fileID: 4900000, guid: 8f4ca09b628553643959321feafddc49, type: 3}
+    StatesToBlock: 
+  - TypeName: vp_FPWeapon
+    Name: Crouch
+    TextAsset: {fileID: 4900000, guid: 6ba2c107cc81b5347beae93fe6e93182, type: 3}
+    StatesToBlock: 04000000
+  - TypeName: vp_FPWeapon
+    Name: Run
+    TextAsset: {fileID: 4900000, guid: 48c1d77bb6720e74c89a1ad55ee0942e, type: 3}
+    StatesToBlock: 
+  - TypeName: vp_FPWeapon
+    Name: Attack
+    TextAsset: {fileID: 0}
+    StatesToBlock: 0300000004000000
+  - TypeName: vp_FPWeapon
+    Name: Default
+    TextAsset: {fileID: 0}
+    StatesToBlock: 
+  Children: []
+  Siblings:
+  - {fileID: 114080722880444724}
+  Family:
+  - {fileID: 114350180588899430}
+  - {fileID: 114993907903982972}
+  - {fileID: 114151071037617804}
+  - {fileID: 114126648861523660}
+  - {fileID: 114791281144875426}
+  - {fileID: 114832690955946112}
+  - {fileID: 114753856937272018}
+  - {fileID: 114142303863856626}
+  - {fileID: 114893219373289410}
+  - {fileID: 114080722880444724}
+  - {fileID: 114829723641822194}
+  - {fileID: 114094583253956562}
+  - {fileID: 114051412269585730}
+  - {fileID: 114213287597308672}
+  Renderers:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  AudioSources:
+  - {fileID: 82347029729506626}
+  Weapon3rdPersonModel: {fileID: 1713624133745334}
+  Weapon3rdPersonInvisibleMaterial: {fileID: 2100000, guid: 79493f8f538fb764b989fc1cc9c818f7,
+    type: 2}
+  PositionOffset: {x: 0.065, y: -0.05, z: 0.39}
+  PositionSpring2Stiffness: 0.987
+  PositionSpring2Damping: 0.952
+  RotationOffset: {x: -1.33, y: -2.07, z: 0}
+  RotationSpring2Stiffness: 0.221
+  RotationSpring2Damping: 0.85
+  AnimationType: 1
+  AnimationGrip: 3
+  WeaponPrefab: {fileID: 1011514311042824, guid: f64390c90adcd0b44868f6aefea3d3f5,
+    type: 2}
+  RenderingZoomDamping: 0.5
+  RenderingFieldOfView: 35
+  RenderingClippingPlanes: {x: 0.1, y: 10}
+  RenderingZScale: 1
+  PositionSpringStiffness: 0.01
+  PositionSpringDamping: 0.264
+  PositionFallRetract: 1
+  PositionPivotSpringStiffness: 0.01
+  PositionPivotSpringDamping: 0.25
+  PositionKneeling: 0.05
+  PositionKneelingSoftness: 1
+  PositionWalkSlide: {x: 0.5, y: 0.75, z: 0.5}
+  PositionPivot: {x: -0.33, y: -0.37, z: 0.07}
+  RotationPivot: {x: 0, y: 0, z: 0}
+  PositionInputVelocityScale: 1
+  PositionMaxInputVelocity: 25
+  RotationSpringStiffness: 0.01
+  RotationSpringDamping: 0.42
+  RotationPivotSpringStiffness: 0.01
+  RotationPivotSpringDamping: 0.25
+  RotationKneeling: 20
+  RotationKneelingSoftness: 5
+  RotationLookSway: {x: 1, y: 1, z: 0.5}
+  RotationStrafeSway: {x: 0, y: 2, z: 2.5}
+  RotationFallSway: {x: 2, y: -0.5, z: -5}
+  RotationSlopeSway: 0.5
+  RotationInputVelocityScale: 1
+  RotationMaxInputVelocity: 2
+  RetractionDistance: 0
+  RetractionOffset: {x: 0, y: 0}
+  RetractionRelaxSpeed: 0.25
+  ShakeSpeed: 0
+  ShakeAmplitude: {x: 0.3, y: 0, z: 1}
+  BobRate: {x: 1.4, y: 0.7, z: 0.7, w: 0.7}
+  BobAmplitude: {x: -5, y: 5, z: -5, w: 0.05}
+  BobInputVelocityScale: 5
+  BobMaxInputVelocity: 20
+  BobRequireGroundContact: 1
+  StepPositionForce: {x: 0, y: -0.0012, z: -0.0012}
+  StepRotationForce: {x: 0.015, y: 0, z: -0.04}
+  StepSoftness: 10
+  StepMinVelocity: 35
+  StepPositionBalance: 0
+  StepRotationBalance: 0
+  StepForceScale: 1
+  LookDownActive: 0
+  LookDownYawLimit: 60
+  LookDownPositionOffsetMiddle: {x: 0.32, y: -0.37, z: 0.78}
+  LookDownPositionOffsetLeft: {x: 0.27, y: -0.31, z: 0.7}
+  LookDownPositionOffsetRight: {x: 0.6, y: -0.41, z: 0.86}
+  LookDownPositionSpringPower: 1
+  LookDownRotationOffsetMiddle: {x: -3.9, y: 2.24, z: 4.69}
+  LookDownRotationOffsetLeft: {x: -7, y: -10.5, z: 15.6}
+  LookDownRotationOffsetRight: {x: -9.2, y: -9.8, z: 48.84}
+  LookDownRotationSpringPower: 1
+  SoundWield: {fileID: 8300000, guid: 473a74db115d813438612532f0f79436, type: 3}
+  SoundUnWield: {fileID: 8300000, guid: 1121f8e8542b4ad4db2becdfb8edf6a8, type: 3}
+  AnimationWield: {fileID: 0}
+  AnimationUnWield: {fileID: 0}
+  AnimationAmbient:
+  - {fileID: 7400000, guid: 6d025852331c0bc4a9f2ce2c72ee7a38, type: 3}
+  - {fileID: 7400002, guid: 6d025852331c0bc4a9f2ce2c72ee7a38, type: 3}
+  - {fileID: 7400006, guid: 6d025852331c0bc4a9f2ce2c72ee7a38, type: 3}
+  AmbientInterval: {x: 2.5, y: 7.5}
+  PositionExitOffset: {x: 0, y: -1, z: 0}
+  RotationExitOffset: {x: 10, y: 0, z: 0}
   DoSpringsInLateUpdate: 0
 --- !u!114 &114148987077563506
 MonoBehaviour:
@@ -6159,7 +6491,7 @@ MonoBehaviour:
   PhysicsPushInterval: 0.1
   PhysicsCrouchHeightModifier: 0.5
   PositionOnPlatform: {x: 0, y: 0, z: 0}
-  PhysicsHasCollisionTrigger: 0
+  PhysicsHasCollisionTrigger: 1
   MotorAcceleration: 0.18
   MotorDamping: 0.27
   MotorBackwardsSpeed: 0.65
@@ -6665,6 +6997,20 @@ MonoBehaviour:
     spineStiffness: 0.5
     pullBodyVertical: 0.5
     pullBodyHorizontal: 0
+--- !u!114 &114487979190335398
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1853923770677944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dc13c48b5ea45f47abb1efd236a5812, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: {fileID: 11400000, guid: 26d4f2d91288b9e45ba418604058a404, type: 2}
+  ID: 0
+  weaponHelp: 188
 --- !u!114 &114557508552214482
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6714,6 +7060,20 @@ MonoBehaviour:
   LookDownZoomFactor: 12
   ShowUnarmedArms: 1
   InvisibleMaterial: {fileID: 2100000, guid: 79493f8f538fb764b989fc1cc9c818f7, type: 2}
+--- !u!114 &114572751571646866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1853923770677944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28dff080eb100b14190cc15bff12b397, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SoundReload: {fileID: 8300000, guid: 51d950494f51c784086995ce9274cbdc, type: 3}
+  ReloadDuration: 1
+  AnimationReload: {fileID: 0}
 --- !u!114 &114605709323508428
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6742,7 +7102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ItemRecords:
-    itemList: 171
+    itemList: 213
     helpbox: 122
   m_ItemCaps:
     itemList: 88
@@ -6771,6 +7131,12 @@ MonoBehaviour:
     Count: 50
     m_Capacity: 50
     m_Inventory: {fileID: 114620606765814620}
+  - Type: {fileID: 11400000, guid: 26d4f2d91288b9e45ba418604058a404, type: 2}
+    ID: 0
+    UnitType: {fileID: 11400000, guid: 5448e0cc5a99a1c4f8a397ecbd268f5d, type: 2}
+    Count: 6
+    m_Capacity: 6
+    m_Inventory: {fileID: 114620606765814620}
   m_InternalUnitBanks:
   - Type: {fileID: 0}
     ID: 0
@@ -6782,6 +7148,12 @@ MonoBehaviour:
     ID: 0
     UnitType: {fileID: 11400000, guid: c11d93b063eaa9043b51fa3831599c63, type: 2}
     Count: 300
+    m_Capacity: -1
+    m_Inventory: {fileID: 114620606765814620}
+  - Type: {fileID: 0}
+    ID: 0
+    UnitType: {fileID: 11400000, guid: 5448e0cc5a99a1c4f8a397ecbd268f5d, type: 2}
+    Count: 20
     m_Capacity: -1
     m_Inventory: {fileID: 114620606765814620}
   CapsEnabled: 0
@@ -7897,7 +8269,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.27834222, y: -0.014170625, z: 0.22969437}
+  m_ConnectedAnchor: {x: -0.27834222, y: -0.014170625, z: 0.2296946}
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -7941,7 +8313,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.2978474, y: 0.00000014714898, z: 0}
+  m_ConnectedAnchor: {x: -0.29784742, y: 0.0000001396984, z: -0.00000005960465}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: -1, z: 0}
   m_TwistLimitSpring:
@@ -7985,7 +8357,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.29784715, y: 0.00000016391276, z: 0.000000029802322}
+  m_ConnectedAnchor: {x: -0.29784727, y: 0.00000015646218, z: 0.00000024586916}
   serializedVersion: 2
   m_SwingAxis: {x: 0, y: -1, z: 0}
   m_TwistLimitSpring:
@@ -8029,7 +8401,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000011920905, y: 0.00000035762787, z: 0.13084534}
+  m_ConnectedAnchor: {x: 0.00000011920905, y: 0.00000035762787, z: 0.13084555}
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -8073,7 +8445,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.49696842, y: 0.0000000088475645, z: -0.000000007450581}
+  m_ConnectedAnchor: {x: -0.49696845, y: 0.000000028871, z: 0.00000016391277}
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -8117,7 +8489,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.2707771, y: -0.00012721797, z: 0.0000003874302}
+  m_ConnectedAnchor: {x: -0.2707771, y: -0.00012721797, z: 0.00000047683716}
   serializedVersion: 2
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -8161,7 +8533,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.00000011920905, y: -0.00000035762787, z: -0.13084534}
+  m_ConnectedAnchor: {x: -0.00000011920905, y: -0.00000035762787, z: -0.13084555}
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -8205,7 +8577,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: -1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.4129744, y: 0.07959795, z: 0.0013762038}
+  m_ConnectedAnchor: {x: -0.4129744, y: 0.07959795, z: 0.001376323}
   serializedVersion: 2
   m_SwingAxis: {x: 1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -8249,7 +8621,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.49696842, y: 0.00000000698492, z: 0.000000014901159}
+  m_ConnectedAnchor: {x: -0.4969684, y: -0.000000019557776, z: 0.0000002533197}
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:
@@ -8293,7 +8665,7 @@ CharacterJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 0, y: -1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.2783423, y: -0.014169452, z: -0.22969443}
+  m_ConnectedAnchor: {x: -0.2783423, y: -0.014169452, z: -0.2296946}
   serializedVersion: 2
   m_SwingAxis: {x: -1, y: 0, z: 0}
   m_TwistLimitSpring:

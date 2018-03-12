@@ -13,19 +13,27 @@ public class IKHandler : MonoBehaviour {
     void Awake()
     {
         aimIk = GetComponent<AimIK>();
-        bodyIK = GetComponent<FullBodyBipedIK>();        
+        bodyIK = GetComponent<FullBodyBipedIK>();
 
-        eventHandler = transform.GetComponentInParent<vp_FPPlayerEventHandler>();        
+        eventHandler = vp_LocalPlayer.EventHandler; 
     }
 
     void OnEnable()
     {
-        eventHandler.Register(this);
+        if (eventHandler != null)
+        {
+            eventHandler.Register(this);
+        }
+        
     }
 
     void OnDisable()
     {
-        eventHandler.Unregister(this);
+        if (eventHandler != null)
+        {
+            eventHandler.Unregister(this);
+        }
+        
     }
 
     void OnStart_SetWeapon()

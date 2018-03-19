@@ -434,7 +434,7 @@ public class vp_FPCamera : vp_Component
 		// third person
 		Update3rdPerson();
 
-	}
+    }
 
 
 	/// <summary>
@@ -490,7 +490,6 @@ public class vp_FPCamera : vp_Component
 		TryCameraCollision();
 
 		LookPoint = GetLookPoint();
-
 	}
 
 

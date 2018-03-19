@@ -24,6 +24,8 @@
 using UnityEngine;
 using System.Collections.Generic;
 
+using RootMotion.FinalIK;
+
 public class vp_MPRemotePlayer : vp_MPNetworkPlayer
 {
 
@@ -52,8 +54,12 @@ public class vp_MPRemotePlayer : vp_MPNetworkPlayer
 	protected RaycastHit m_AltitudeHit;							// used to detect the current ground altitude
 	protected float m_GroundAltitude = 0.0f;
 
-	// firing
-	protected List<FireEvent> FireEvents = new List<FireEvent>();
+    // aim point
+    private Transform aimPoint;
+    private Vector3 lastAimPoint;
+
+    // firing
+    protected List<FireEvent> FireEvents = new List<FireEvent>();
 	protected GameObject m_BulletAdjuster;				// used for avoiding shooting ourselves under lagged conditions
 	protected Transform m_BulletAdjusterTransform;		// TODO: need to cache both gameobject & transform?
 	protected RaycastHit m_BulletAdjusterHit;
@@ -139,10 +145,10 @@ public class vp_MPRemotePlayer : vp_MPNetworkPlayer
 	/// </summary>
 	public override void Awake()
 	{
-
 		base.Awake();
 
-	}
+        aimPoint = transform.Find("AimPoint");
+    }
 
 	
 	/// <summary>
@@ -304,17 +310,18 @@ public class vp_MPRemotePlayer : vp_MPNetworkPlayer
 
 		UpdateRotation();
 
+        UpdateAimPoint();
+
 		UpdateDebugPrimitive();
 
 		UpdateFiring();
 
 	}
 
-
-	/// <summary>
-	/// for testing prediction algorithms
-	/// </summary>
-	protected virtual void UpdateNetworkValues()
+    /// <summary>
+    /// for testing prediction algorithms
+    /// </summary>
+    protected virtual void UpdateNetworkValues()
 	{
 
 		// if we are not simulating lag, always use the most up-to-date
@@ -532,6 +539,10 @@ public class vp_MPRemotePlayer : vp_MPNetworkPlayer
 
 	}
 
+    protected virtual void UpdateAimPoint()
+    {
+        aimPoint.position = Vector3.Lerp(aimPoint.position, lastAimPoint, Time.deltaTime * 5.0f);
+    }
 
 	/// <summary>
 	/// 
@@ -542,7 +553,6 @@ public class vp_MPRemotePlayer : vp_MPNetworkPlayer
 		base.FixedUpdate();
 		
 	}
-
 
 	/// <summary>
 	/// updates position, rotation and velocity over the network
@@ -561,12 +571,13 @@ public class vp_MPRemotePlayer : vp_MPNetworkPlayer
 		m_LastRotation = (Vector2)stream.ReceiveNext();
 		m_LastVelocity = ((Vector3)stream.ReceiveNext());
 		m_InputMoveVector = ((Vector2)stream.ReceiveNext());
+        lastAimPoint = (Vector3)stream.ReceiveNext();
 
-		// DEBUG: uncomment the below line in BOTH vp_MPRemotePlayer AND vp_MPLocalPlayer ->
-		// OnPhotonSerializeView to make the game detect while weapon index reported
-		// by a remote machine goes out of sync with the one wielded on the corresponding
-		// remote player on this machine - and to fix it
-		ForceSyncWeapon(stream);
+        // DEBUG: uncomment the below line in BOTH vp_MPRemotePlayer AND vp_MPLocalPlayer ->
+        // OnPhotonSerializeView to make the game detect while weapon index reported
+        // by a remote machine goes out of sync with the one wielded on the corresponding
+        // remote player on this machine - and to fix it
+        ForceSyncWeapon(stream);
 
 	}
 

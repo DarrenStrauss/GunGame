@@ -2,7 +2,7 @@
 
 public class WeaponIK : MonoBehaviour {
     [SerializeField]
-    private GameObject aimTarget;
+    private GameObject aimTransform;
     [SerializeField]
     private GameObject leftHandTarget;
     [SerializeField]
@@ -12,9 +12,9 @@ public class WeaponIK : MonoBehaviour {
     [SerializeField]
     private float leftHandTargetReloadWeight;
 
-    public GameObject AimTarget
+    public GameObject AimTransform
     {
-        get { return aimTarget; }
+        get { return aimTransform; }
     }
 
     public GameObject LeftHandTarget

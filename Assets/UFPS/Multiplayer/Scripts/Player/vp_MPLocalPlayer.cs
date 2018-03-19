@@ -21,6 +21,9 @@ using System.Collections.Generic;
 
 public class vp_MPLocalPlayer : vp_MPNetworkPlayer
 {
+    // local aim point
+    private Transform aimPointTransform;
+    private Vector3 aimPoint;
 
 	// local event handler
 	protected vp_FPPlayerEventHandler m_FPPlayer = null;
@@ -83,9 +86,9 @@ public class vp_MPLocalPlayer : vp_MPNetworkPlayer
 	/// </summary>
 	public override void Awake()
 	{
-
 		base.Awake();
-			
+
+        aimPointTransform = transform.Find("FPSCamera/AimPoint");
 	}
 
 
@@ -135,18 +138,19 @@ public class vp_MPLocalPlayer : vp_MPNetworkPlayer
 	/// </summary>
 	public override void Update()
 	{
-
 		base.Update();
-
 	}
 
-
-	/// <summary>
-	/// updates position, rotation and velocity over the network
-	/// </summary>
-	public override void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    void LateUpdate()
     {
-
+        aimPoint = aimPointTransform.position; // Late update to get value after ik solving
+    }
+    
+    /// <summary>
+    /// updates position, rotation and velocity over the network
+    /// </summary>
+    public override void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
+    {
 		if (!stream.isWriting)
 			return;
 
@@ -161,6 +165,7 @@ public class vp_MPLocalPlayer : vp_MPNetworkPlayer
 		stream.SendNext((Vector2)new Vector2(FPPlayer.Rotation.Get().x, Transform.eulerAngles.y));	// send camera pitch + root-transform yaw
 		stream.SendNext((Vector3)FPPlayer.Velocity.Get());			// direction player is moving
 		stream.SendNext((Vector2)FPPlayer.InputMoveVector.Get());	// direction player is trying to move
+        stream.SendNext(aimPoint);                // position where player is aiming
 
 		// DEBUG: uncomment the below line in BOTH vp_MPRemotePlayer AND vp_MPLocalPlayer ->
 		// OnPhotonSerializeView to make the game detect when the weapon index reported
@@ -176,9 +181,7 @@ public class vp_MPLocalPlayer : vp_MPNetworkPlayer
 	/// </summary>
 	protected override void ForceSyncWeapon(PhotonStream stream)
 	{
-
 		stream.SendNext((int)FPPlayer.CurrentWeaponIndex.Get());	// current weapon of player
-
 	}
 
 

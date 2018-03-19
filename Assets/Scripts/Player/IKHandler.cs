@@ -3,19 +3,27 @@ using RootMotion.FinalIK;
 
 public class IKHandler : MonoBehaviour {
     [SerializeField]
+    private Transform aimTarget;
+    [SerializeField]
     private GameObject weapons;
 
+    private vp_PlayerEventHandler eventHandler;
     private AimIK aimIk;
     private FullBodyBipedIK bodyIK;    
-    private vp_FPPlayerEventHandler eventHandler;
     private WeaponIK currentWeaponIK;
 
     void Awake()
     {
+        eventHandler = transform.parent.GetComponent<vp_PlayerEventHandler>();
+        eventHandler.Register(this);
+
         aimIk = GetComponent<AimIK>();
         bodyIK = GetComponent<FullBodyBipedIK>();
+    }
 
-        eventHandler = vp_LocalPlayer.EventHandler; 
+    void Start()
+    {
+        aimIk.solver.target = aimTarget;
     }
 
     void OnEnable()
@@ -24,7 +32,6 @@ public class IKHandler : MonoBehaviour {
         {
             eventHandler.Register(this);
         }
-        
     }
 
     void OnDisable()
@@ -32,9 +39,8 @@ public class IKHandler : MonoBehaviour {
         if (eventHandler != null)
         {
             eventHandler.Unregister(this);
-        }
-        
-    }
+        }        
+    } 
 
     void OnStart_SetWeapon()
     {
@@ -55,14 +61,15 @@ public class IKHandler : MonoBehaviour {
         try
         {
             currentWeaponIK = weapons.transform.GetChild(currentWeaponIndex).GetComponent<WeaponIK>();
-            SetAimTarget();
+
+            SetAimTransform();
+            SetAimTransform();
             SetLeftHandTarget();
         }
         catch
         {
             aimIk.enabled = false;
             bodyIK.enabled = false;
-            eventHandler.Unregister(this);
         }        
     }
 
@@ -76,9 +83,15 @@ public class IKHandler : MonoBehaviour {
         SetLeftHandTarget();
     }
 
-    private void SetAimTarget()
+    void OnStart_Dead()
     {
-        aimIk.solver.transform = currentWeaponIK.AimTarget.transform;
+        aimIk.enabled = false;
+        bodyIK.enabled = false;
+    }
+
+    private void SetAimTransform()
+    {
+        aimIk.solver.transform = currentWeaponIK.AimTransform.transform;
     }
 
     private void SetLeftHandTarget()
@@ -92,5 +105,4 @@ public class IKHandler : MonoBehaviour {
         bodyIK.solver.leftHandEffector.target = currentWeaponIK.LeftHandTargetReload.transform;
         bodyIK.solver.leftHandEffector.positionWeight = currentWeaponIK.LeftHandTargetReloadWeight;
     }
-
 }

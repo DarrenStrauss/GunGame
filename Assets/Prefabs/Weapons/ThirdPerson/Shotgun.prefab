@@ -405,7 +405,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1153809027956334}
   m_LocalRotation: {x: -0, y: -0.047098175, z: -0, w: 0.9988903}
-  m_LocalPosition: {x: 4.802501, y: 1.8846335, z: -6.5053134}
+  m_LocalPosition: {x: -7.0755963, y: 1.779, z: 0.47474802}
   m_LocalScale: {x: 2.01068, y: 2.01068, z: 2.1082098}
   m_Children:
   - {fileID: 4552029714805928}
@@ -687,7 +687,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b2a37314b5e86054a930fbb16dce0f2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  aimTarget: {fileID: 1753200158469250}
+  aimTransform: {fileID: 1753200158469250}
   leftHandTarget: {fileID: 1823372813600648}
   leftHandTargetWeight: 0
   leftHandTargetReload: {fileID: 1467508202850564}

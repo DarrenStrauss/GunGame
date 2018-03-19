@@ -23124,6 +23124,10 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 1760722448}
     m_Modifications:
+    - target: {fileID: 11400010, guid: 901e649aa14d3464d97d6be78a9cee7f, type: 2}
+      propertyPath: ObservedComponents.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 901e649aa14d3464d97d6be78a9cee7f, type: 2}
       propertyPath: m_AddPrefabs.Remote.Array.size
       value: 1
@@ -23162,11 +23166,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400010, guid: 901e649aa14d3464d97d6be78a9cee7f, type: 2}
       propertyPath: viewIdField
-      value: 901
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11400010, guid: 901e649aa14d3464d97d6be78a9cee7f, type: 2}
       propertyPath: instantiationId
-      value: 901
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11400008, guid: 901e649aa14d3464d97d6be78a9cee7f, type: 2}
       propertyPath: currentLevelHelp
@@ -23178,7 +23182,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 901e649aa14d3464d97d6be78a9cee7f, type: 2}
       propertyPath: m_AddPrefabs.addPrefabsHelp
-      value: 100
+      value: 89
       objectReference: {fileID: 0}
     - target: {fileID: 11400006, guid: 901e649aa14d3464d97d6be78a9cee7f, type: 2}
       propertyPath: m_AddComponents.addComponentsHelp
@@ -31413,7 +31417,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 11400002, guid: 463c8626f1e8cfd4b88e6022e888cb68, type: 2}
       propertyPath: ObservedComponents.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400002, guid: 463c8626f1e8cfd4b88e6022e888cb68, type: 2}
       propertyPath: m_LocalPosition.x
@@ -31449,11 +31453,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 463c8626f1e8cfd4b88e6022e888cb68, type: 2}
       propertyPath: viewIdField
-      value: 900
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400002, guid: 463c8626f1e8cfd4b88e6022e888cb68, type: 2}
       propertyPath: instantiationId
-      value: 900
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 11400004, guid: 463c8626f1e8cfd4b88e6022e888cb68, type: 2}
       propertyPath: helpBox

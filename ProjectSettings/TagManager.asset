@@ -7,6 +7,9 @@ TagManager:
   - Triggerer
   - Grass
   - Stone
+  - 1Pistol
+  - 2Revolver
+  - Foot
   layers:
   - Default
   - TransparentFX
@@ -16,9 +19,9 @@ TagManager:
   - UI
   - 
   - 
-  - 
-  - 
-  - 
+  - Level
+  - PlayerBody
+  - RemoteBody
   - 
   - 
   - 

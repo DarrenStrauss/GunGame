@@ -26,7 +26,10 @@ public sealed class vp_Layer
 	public const int IgnoreRaycast = 2;
 	public const int Water = 4;
 
-	// standard layers
+    // standard layers
+    public const int Level = 8;
+    public const int PlayerBody = 9;
+    public const int RemoteBody = 10;
 	public const int MovableObject = 21;	// used on movable physics objects to prevent spawning inside them
 	public const int Ragdoll = 22;			// used to prevent collision between controller capsule and its ragdoll bodyparts
 	public const int RemotePlayer = 23;		// used to distinguish the local player from multiplayer remote ones
@@ -44,16 +47,16 @@ public sealed class vp_Layer
 
 		// layer mask for raycasting away from the local player, ignoring the player itself
 		// and all non-solid objects, including rigidbody pickups (used for bullets)
-		public static int BulletBlockers = ~((1 << LocalPlayer) | (1 << Debris) |
+		public static int BulletBlockers = ~((1 << LocalPlayer) | (1 << RemotePlayer) | (1 << Debris) |
 								(1 << IgnoreRaycast) | (1 << IgnoreBullets) | (1 << Trigger) | (1 << Water) | (1 << Pickup));
 
 		// layer mask for raycasting away from the local player, ignoring the player itself
 		// and all non-solid objects. (used for player physics)
-		public static int ExternalBlockers = ~((1 << LocalPlayer) | (1 << Debris) |
-								(1 << IgnoreRaycast) | (1 << Trigger) | (1 << RemotePlayer) | (1 << Ragdoll) | (1 << Water));
+		public static int ExternalBlockers = ~((1 << LocalPlayer) | (1 << PlayerBody) | (1 << RemotePlayer) | (1 << Debris) |
+								(1 << IgnoreRaycast) | (1 << Trigger) | (1 << Ragdoll) | (1 << Water));
 
 		// layer mask for detecting solid, moving objects. (used for spawn radius checking)
-		public static int PhysicsBlockers = (1 << vp_Layer.LocalPlayer) | (1 << vp_Layer.MovingPlatform) | (1 << vp_Layer.MovableObject);
+		public static int PhysicsBlockers = (1 << vp_Layer.LocalPlayer) | (1 << PlayerBody) | (1 << vp_Layer.MovingPlatform) | (1 << vp_Layer.MovableObject);
 
 		// layer mask for filtering out small and walk-thru objects. (used for explosions)
 		public static int IgnoreWalkThru = ~((1 << Debris) | (1 << IgnoreRaycast) |
@@ -70,7 +73,11 @@ public sealed class vp_Layer
 		Physics.IgnoreLayerCollision(LocalPlayer, Debris);		// player should never collide with small debris
 		Physics.IgnoreLayerCollision(Debris, Debris);			// gun shells should not collide against each other
 		Physics.IgnoreLayerCollision(Ragdoll, RemotePlayer);
-	}
+        Physics.IgnoreLayerCollision(Level, PlayerBody);
+        Physics.IgnoreLayerCollision(Level, RemoteBody);
+        Physics.IgnoreLayerCollision(LocalPlayer, RemoteBody);
+        Physics.IgnoreLayerCollision(RemotePlayer, PlayerBody);
+    }
 	private vp_Layer(){}
 
 

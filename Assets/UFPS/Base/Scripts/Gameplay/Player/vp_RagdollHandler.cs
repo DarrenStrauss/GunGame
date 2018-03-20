@@ -33,6 +33,7 @@ public class vp_RagdollHandler : MonoBehaviour
 	protected vp_Timer.Handle PostponeTimer = new vp_Timer.Handle();
 	protected Vector3 m_HeadRotationCorrection = Vector3.zero;
 	protected Vector3 m_CameraFreezeAngle = Vector3.zero;
+    protected int initialLayer;
 
 	// all components potentially involved in the ragdoll process
 	protected List<Collider> m_Colliders = null;					// ragdoll colliders
@@ -185,6 +186,8 @@ public class vp_RagdollHandler : MonoBehaviour
 			this.enabled = false;
 			return;
 		}
+
+        initialLayer = Rigidbodies[0].gameObject.layer;
 
 		//SaveStartPose();	// why is this not referenced? evaluate!
 
@@ -390,20 +393,33 @@ public class vp_RagdollHandler : MonoBehaviour
 
 		foreach (Rigidbody r in Rigidbodies)
 		{
-			r.isKinematic = !enabled;
-			if (enabled)
-				r.AddForce(Player.Velocity.Get() * VelocityMultiplier);		// pass on momentum of controller into the rigidbodies
-		}
-		
-		foreach (Collider c in Colliders)
-		{
-			c.enabled = enabled;
-		}
+            GameObject gameObject = r.gameObject;
+
+            foreach (Collider c in Colliders)
+            {
+                if (!c.isTrigger)
+                {
+                    c.enabled = enabled;
+                }
+            }
+
+            if (enabled && gameObject.tag != "Foot")
+            {
+                r.gameObject.layer = vp_Layer.Ragdoll;
+                r.isKinematic = false;
+
+                r.AddForce(Player.Velocity.Get() * VelocityMultiplier);
+            }
+            else
+            {
+                r.gameObject.layer = initialLayer;
+                r.isKinematic = true;
+            }
+		}	
 
 		// if disabling, restore the initial state of all the rigidbodies
 		if (!enabled)
 			RestoreStartPose();
-
 	}
 
 

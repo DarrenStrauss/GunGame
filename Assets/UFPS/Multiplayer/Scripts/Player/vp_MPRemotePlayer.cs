@@ -47,7 +47,7 @@ public class vp_MPRemotePlayer : vp_MPNetworkPlayer
 
 	// ground snap
 	public float GroundSnapRange = 0.5f;						// if within ground range and falling, transform will be smooth-snapped to ground
-	public const int GroundSnapMask = ~((1 << vp_Layer.LocalPlayer) | (1 << vp_Layer.Debris) |
+	public const int GroundSnapMask = ~((1 << vp_Layer.LocalPlayer) | (1 << vp_Layer.PlayerBody) | (1 << vp_Layer.RemoteBody) | (1 << vp_Layer.Debris) |
 								(1 << vp_Layer.IgnoreRaycast) | (1 << vp_Layer.Trigger) |
 								(1 << vp_Layer.RemotePlayer) | (1 << vp_Layer.Ragdoll) |
 								(1 << vp_Layer.Water) | (1 << vp_Layer.MovableObject) | (1 << vp_Layer.Pickup));		// excludes movableobjects for smoother physics around rigidbodies

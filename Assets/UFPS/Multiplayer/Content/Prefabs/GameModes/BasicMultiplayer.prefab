@@ -21,7 +21,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
@@ -55,6 +55,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 8b01507bf3c4f444b9b72c6b99331f84, type: 2}
   - {fileID: 11400000, guid: 3a65c1045a843bc4ba9680febc091edf, type: 2}
   - {fileID: 11400000, guid: 946f653b3250fba4caf20b0e8589e14a, type: 2}
+  - {fileID: 11400000, guid: 26d4f2d91288b9e45ba418604058a404, type: 2}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -90,17 +91,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AvailablePlayerTypes:
-  - {fileID: 11400000, guid: 9bebfaa0fb3d33647a1986338b131e3f, type: 2}
+  - {fileID: 11400000, guid: 599265212aa6a1c44bdee1e37b381f7d, type: 2}
   m_AddPrefabs:
-    Local:
-    - Prefab: {fileID: 100000, guid: 8246360557c97b746985dfdf33775db6, type: 2}
-      ParentName: 
-    Remote:
-    - Prefab: {fileID: 100000, guid: 8246360557c97b746985dfdf33775db6, type: 2}
-      ParentName: 
-    - Prefab: {fileID: 100000, guid: 2ee56cc10b921a247bed60dd632d7a8e, type: 2}
-      ParentName: Head
-    addPrefabsHelp: 111
+    Local: []
+    Remote: []
+    addPrefabsHelp: 100
   m_AddComponents:
     Local:
     - ComponentName: vp_MPPlayerStats
@@ -108,7 +103,7 @@ MonoBehaviour:
     Remote:
     - ComponentName: vp_MPPlayerStats
       TransformName: 
-    addComponentsHelp: 111
+    addComponentsHelp: 89
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -122,8 +117,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GameLength: 0
   PauseLength: 0
-  CurrentLevel: UFPSMP_TestMap
-  currentLevelHelp: 95
+  CurrentLevel: Arena1
+  currentLevelHelp: 73
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -137,8 +132,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ownerId: 0
   group: 0
+  OwnerShipWasTransfered: 0
   prefixBackup: -1
-  observed: {fileID: 0}
   synchronization: 0
   onSerializeTransformOption: 3
   onSerializeRigidBodyOption: 2
@@ -148,6 +143,7 @@ MonoBehaviour:
   ObservedComponentsFoldoutOpen: 1
   viewIdField: 0
   instantiationId: -1
+  currentMasterID: -1
   isRuntimeInstantiated: 0
 --- !u!114 &11400012
 MonoBehaviour:

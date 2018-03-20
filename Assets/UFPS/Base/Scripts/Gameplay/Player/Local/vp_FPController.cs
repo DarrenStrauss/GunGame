@@ -1114,12 +1114,12 @@ public class vp_FPController : vp_CharacterController
 	{
 		//Debug.Log(vp_Gameplay.isMultiplayer);
 
-		// early-out if the object is static or debris
+		// early-out if the object is static, player's own body or debris
 
 		if (hit.gameObject.isStatic)
 			return;
 
-		if (hit.gameObject.layer == vp_Layer.Debris)
+		if (hit.gameObject.layer == vp_Layer.PlayerBody || hit.gameObject.layer == vp_Layer.Debris)
 			return;
 
 		// try to find a rigidbody on the object

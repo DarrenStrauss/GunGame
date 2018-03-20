@@ -248,7 +248,7 @@ MonoBehaviour:
   SurfaceType: {fileID: 11400000, guid: 13ec8cc62ee667645b976a0eb333e45a, type: 2}
   AllowDecals: 1
   SurfaceID: 0
-  surfaceTypeHelp: 150
+  surfaceTypeHelp: 128
 --- !u!1 &156385278
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +321,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 90d8e09703679534295bd2cacb73d6de, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 90d8e09703679534295bd2cacb73d6de, type: 2}
   m_IsPrefabParent: 0
@@ -375,6 +379,10 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 7.2991366
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 584a8ef4749c89745b7ae07f3ba7617f, type: 2}
+      propertyPath: m_Layer
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 584a8ef4749c89745b7ae07f3ba7617f, type: 2}
   m_IsPrefabParent: 0
@@ -420,6 +428,10 @@ Prefab:
     - target: {fileID: 4496302626519012, guid: 4a46a7a3a2d6c6741acc0825d44897a8, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725537315416538, guid: 4a46a7a3a2d6c6741acc0825d44897a8, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 114997246623800598, guid: 4a46a7a3a2d6c6741acc0825d44897a8, type: 2}
@@ -519,6 +531,10 @@ Prefab:
     - target: {fileID: 400000, guid: ab33e6080ae416b4d899f39fa8951b98, type: 2}
       propertyPath: m_LocalScale.z
       value: 0.056219466
+      objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: ab33e6080ae416b4d899f39fa8951b98, type: 2}
+      propertyPath: m_Layer
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ab33e6080ae416b4d899f39fa8951b98, type: 2}

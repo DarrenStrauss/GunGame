@@ -135,14 +135,10 @@ public class vp_Bullet : MonoBehaviour
 
 		m_Ray = new Ray(m_Transform.position, m_Transform.forward);
 
-		// if this bullet was fired by the local player: don't allow it to hit the local player!
-		if ((m_Source != null) && (m_Source.gameObject.layer == vp_Layer.LocalPlayer))
-			LayerMask = vp_Layer.Mask.BulletBlockers;
-		else
-			LayerMask = vp_Layer.Mask.IgnoreWalkThru;
+        LayerMask = vp_Layer.Mask.BulletBlockers;
 
-		// raycast against all big, solid objects
-		switch (ScanType)
+        // raycast against all big, solid objects
+        switch (ScanType)
 		{
 			case HitScanType.Raycast:
 				if (!Physics.Raycast(m_Ray, out m_Hit, Range, LayerMask))

@@ -2483,6 +2483,7 @@ GameObject:
   - component: {fileID: 54783501193902386}
   - component: {fileID: 144207511601535628}
   - component: {fileID: 136372218885237222}
+  - component: {fileID: 114916096965802248}
   m_Layer: 10
   m_Name: Bip001 Head
   m_TagString: Untagged
@@ -4694,7 +4695,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1141202557831478}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.8749857, y: -1.377343, z: -4.8318024}
+  m_LocalPosition: {x: 5.105894, y: -2.4492831, z: -5.1692133}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4869848145879482}
@@ -7146,6 +7147,19 @@ MonoBehaviour:
   FallImpactEvent: {fileID: 11400000, guid: 84d80447291911e46b7ff27e4a8902d4, type: 2}
   FallImpactThreshold: 0.15
   m_MuteLocalFootsteps: 0
+--- !u!114 &114916096965802248
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1968180311924118}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee02b558418c6e64caec98e5a401c532, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetObject: {fileID: 1141202557831478}
+  IsCritical: 1
 --- !u!114 &114921466220125106
 MonoBehaviour:
   m_ObjectHideFlags: 1

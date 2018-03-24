@@ -253,6 +253,9 @@ public class vp_DamageHandler : MonoBehaviour
 		if ((damageInfo.Type == vp_DamageInfo.DamageType.Bullet) && (m_Source == Transform))
 			return;
 
+        if (damageInfo.IsCritical)
+            damageInfo.Damage *= damageInfo.CriticalMultiplyer;
+
 		// --- damage will be inflicted ---
 
 		LastDamageTime = Time.time;

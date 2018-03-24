@@ -25,13 +25,12 @@
 /////////////////////////////////////////////////////////////////////////////////
 
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 
-public class vp_DamageTransfer : MonoBehaviour
+public class vp_DamageTransfer : vp_DamageHandler
 {
 
 	public GameObject TargetObject = null;
+    public bool IsCritical = false;
 
 	protected vp_DamageHandler m_TargetDamageHandler = null;
 	protected Collider m_Collider = null;
@@ -68,11 +67,13 @@ public class vp_DamageTransfer : MonoBehaviour
 	/// <summary>
 	/// forwards damage in UFPS format to a damagehandler on the target object
 	/// </summary>
-	public virtual void Damage(vp_DamageInfo damageInfo)
+	public override void Damage(vp_DamageInfo damageInfo)
 	{
 
 		if (!enabled)
 			return;
+
+        damageInfo.IsCritical = IsCritical;
 
 		if (m_TargetDamageHandler != null)
 			m_TargetDamageHandler.Damage(damageInfo);
@@ -86,7 +87,7 @@ public class vp_DamageTransfer : MonoBehaviour
 	/// forwards damage in float format by executing the method 'Damage(float)'
 	/// on the target object
 	/// </summary>
-	public virtual void Damage(float damage)
+	public override void Damage(float damage)
 	{
 
 		if (!enabled)

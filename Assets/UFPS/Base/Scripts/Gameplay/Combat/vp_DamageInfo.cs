@@ -16,10 +16,12 @@ using UnityEngine;
 public class vp_DamageInfo
 {
 
-	public float Damage;				// how much damage was done?
-	public Transform Source;			// from what object did it come (directly)? common use: HUD / GUI
-	public Transform OriginalSource;	// what object initially caused this to happen? common use: game logic, score
-	public DamageType Type;				// what type of damage is this?
+	public float Damage;				        // how much damage was done?
+	public Transform Source;			        // from what object did it come (directly)? common use: HUD / GUI
+	public Transform OriginalSource;	        // what object initially caused this to happen? common use: game logic, score
+	public DamageType Type;				        // what type of damage is this?
+    public float CriticalMultiplyer = 1.0f;     // multiplyer to apply if damage is in a critical damage region
+    public bool IsCritical = false;             // is this damage in a critical region?
 	
 	public enum DamageType
 	{
@@ -57,7 +59,6 @@ public class vp_DamageInfo
 		Type = type;
 	}
 
-
 	/// <summary>
 	/// 
 	/// </summary>
@@ -68,7 +69,14 @@ public class vp_DamageInfo
 		OriginalSource = originalSource;
 		Type = type;
 	}
-	
 
+    public vp_DamageInfo(float damage, float critMultiplyer, Transform source, DamageType type = DamageType.Unknown)
+    {
+        Damage = damage;
+        CriticalMultiplyer = critMultiplyer;
+        Source = source;
+        OriginalSource = source;
+        Type = type;
+    }
 }
 

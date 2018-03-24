@@ -57,11 +57,7 @@ public class vp_FXBullet : vp_Bullet
 	/// </summary>
 	protected override void DoUFPSDamage()
 	{
-
-		m_TargetDHandler.Damage(new vp_DamageInfo(Damage, m_Source, vp_DamageInfo.DamageType.Bullet));
-
+		m_TargetDHandler.Damage(new vp_DamageInfo(Damage, CriticalMultiplyer, m_Source, vp_DamageInfo.DamageType.Bullet));
 	}
-
-
 }
 

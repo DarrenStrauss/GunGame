@@ -48,6 +48,7 @@ public class vp_Bullet : MonoBehaviour
 	public string DamageMethodName = "Damage";	// user defined name of damage method on target
 												// TIP: this can be used to call specialized damage methods directly,
 												// for example: magical, freezing, poison, electric
+    public float CriticalMultiplyer = 1.0f;
 
 	[System.Obsolete("Please use 'DamageMode instead.")]
 	public bool RequireDamageHandler			// deprecated (retained for external script backwards compatibility only)

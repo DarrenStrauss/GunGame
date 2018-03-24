@@ -141,6 +141,7 @@ MonoBehaviour:
   Damage: 1
   DamageMode: 1
   DamageMethodName: Damage
+  CriticalMultiplyer: 100
   ScanType: 0
   ImpactEvent: {fileID: 11400000, guid: ec188bd98e9c00f41aaf177530adf1cb, type: 2}
   hitscanBulletHelp: 89

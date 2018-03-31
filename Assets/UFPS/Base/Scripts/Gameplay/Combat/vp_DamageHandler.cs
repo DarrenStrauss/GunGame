@@ -235,7 +235,10 @@ public class vp_DamageHandler : MonoBehaviour
 
 		// damage is always done in singleplayer, but only in multiplayer if you are the master
 		if (!vp_Gameplay.IsMaster)
-			return;
+        {
+            return;
+        }
+			
 
 		if (CurrentHealth <= 0.0f)
 			return;

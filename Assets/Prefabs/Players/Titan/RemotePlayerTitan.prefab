@@ -4695,7 +4695,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1141202557831478}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.105894, y: -2.4492831, z: -5.1692133}
+  m_LocalPosition: {x: -0.03829956, y: -0.7994623, z: -1.740644}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4869848145879482}
@@ -6281,13 +6281,17 @@ MonoBehaviour:
     Name: Zoom
     TextAsset: {fileID: 4900000, guid: e9bbd4d02bb07cc47ade6ef31c8613fb, type: 3}
     StatesToBlock: 
+  - TypeName: vp_WeaponShooter
+    Name: Default
+    TextAsset: {fileID: 0}
+    StatesToBlock: 
   Children: []
   Siblings: []
   Family: []
   Renderers: []
   AudioSources: []
   m_ProjectileSpawnPoint: {fileID: 0}
-  ProjectilePrefab: {fileID: 100000, guid: b468e2c06761eff4db6862aa008a26fa, type: 2}
+  ProjectilePrefab: {fileID: 0}
   ProjectileScale: 1
   ProjectileFiringRate: 0.45
   ProjectileSpawnDelay: 0
@@ -6348,7 +6352,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Persist: 0
-  States: []
+  States:
+  - TypeName: vp_Weapon
+    Name: Default
+    TextAsset: {fileID: 0}
+    StatesToBlock: 
   Children: []
   Siblings: []
   Family: []
@@ -6484,13 +6492,17 @@ MonoBehaviour:
     Name: Zoom
     TextAsset: {fileID: 4900000, guid: cfa5e23eeadc0c74a82c36e215375cf5, type: 3}
     StatesToBlock: 
+  - TypeName: vp_WeaponShooter
+    Name: Default
+    TextAsset: {fileID: 0}
+    StatesToBlock: 
   Children: []
   Siblings: []
   Family: []
   Renderers: []
   AudioSources: []
   m_ProjectileSpawnPoint: {fileID: 0}
-  ProjectilePrefab: {fileID: 100000, guid: 8e0eede1a84a3d44a859ca0304834df5, type: 2}
+  ProjectilePrefab: {fileID: 0}
   ProjectileScale: 0.6
   ProjectileFiringRate: 0.1
   ProjectileSpawnDelay: 0
@@ -6617,7 +6629,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Persist: 0
-  States: []
+  States:
+  - TypeName: vp_Weapon
+    Name: Default
+    TextAsset: {fileID: 0}
+    StatesToBlock: 
   Children: []
   Siblings: []
   Family: []
@@ -6666,13 +6682,17 @@ MonoBehaviour:
     Name: Zoom
     TextAsset: {fileID: 4900000, guid: 72b776bb04364fb418b4aed7a3a026c7, type: 3}
     StatesToBlock: 
+  - TypeName: vp_WeaponShooter
+    Name: Default
+    TextAsset: {fileID: 0}
+    StatesToBlock: 
   Children: []
   Siblings: []
   Family: []
   Renderers: []
   AudioSources: []
   m_ProjectileSpawnPoint: {fileID: 0}
-  ProjectilePrefab: {fileID: 100000, guid: 3513cfb9cf3f9014f85f2373081d1b23, type: 2}
+  ProjectilePrefab: {fileID: 0}
   ProjectileScale: 0.5
   ProjectileFiringRate: 1
   ProjectileSpawnDelay: 0
@@ -6846,13 +6866,17 @@ MonoBehaviour:
     Name: Zoom
     TextAsset: {fileID: 4900000, guid: 6a464b765c02e8248b69a7d4073fc094, type: 3}
     StatesToBlock: 
+  - TypeName: vp_WeaponShooter
+    Name: Default
+    TextAsset: {fileID: 0}
+    StatesToBlock: 
   Children: []
   Siblings: []
   Family: []
   Renderers: []
   AudioSources: []
   m_ProjectileSpawnPoint: {fileID: 0}
-  ProjectilePrefab: {fileID: 100000, guid: a015ca9d6a1aeb148941bb3544885cc1, type: 2}
+  ProjectilePrefab: {fileID: 0}
   ProjectileScale: 0.4
   ProjectileFiringRate: 0.4
   ProjectileSpawnDelay: 0
@@ -6898,7 +6922,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Persist: 0
-  States: []
+  States:
+  - TypeName: vp_Weapon
+    Name: Default
+    TextAsset: {fileID: 0}
+    StatesToBlock: 
   Children: []
   Siblings: []
   Family: []
@@ -6961,7 +6989,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Persist: 0
-  States: []
+  States:
+  - TypeName: vp_WeaponShooter
+    Name: Default
+    TextAsset: {fileID: 0}
+    StatesToBlock: 
   Children: []
   Siblings: []
   Family: []
@@ -7082,7 +7114,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Persist: 0
-  States: []
+  States:
+  - TypeName: vp_Weapon
+    Name: Default
+    TextAsset: {fileID: 0}
+    StatesToBlock: 
   Children: []
   Siblings: []
   Family: []
@@ -7158,6 +7194,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee02b558418c6e64caec98e5a401c532, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MaxHealth: 1
+  DeathSpawnObjects: []
+  MinDeathDelay: 0
+  MaxDeathDelay: 0
+  CurrentHealth: 0
+  LastDamageTime: 0
+  DeathSound: {fileID: 0}
+  ImpactDamageThreshold: 10
+  ImpactDamageMultiplier: 0
+  Respawns: 0
+  MinRespawnTime: -99999
+  MaxRespawnTime: -99999
+  RespawnCheckRadius: -99999
+  RespawnSound: {fileID: 0}
+  DeathEffect: {fileID: 0}
+  helpbox: 0
   TargetObject: {fileID: 1141202557831478}
   IsCritical: 1
 --- !u!114 &114921466220125106
@@ -7186,7 +7238,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Persist: 0
-  States: []
+  States:
+  - TypeName: vp_Weapon
+    Name: Default
+    TextAsset: {fileID: 0}
+    StatesToBlock: 
   Children: []
   Siblings: []
   Family: []

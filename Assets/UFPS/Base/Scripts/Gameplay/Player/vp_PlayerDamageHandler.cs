@@ -118,13 +118,23 @@ public class vp_PlayerDamageHandler : vp_DamageHandler
 			m_InventoryWasEnabledAtStart = Inventory.enabled;
 
 	}
-	
 
-	/// <summary>
-	/// instantiates the player's death effect, clears the current
-	/// weapon and activates the Dead activity
-	/// </summary>
-	public override void Die()
+    public override void Damage(vp_DamageInfo damageInfo)
+    {
+        if (damageInfo.Type == vp_DamageInfo.DamageType.Bullet)
+        {
+            Player.BulletHit.Send(damageInfo);
+        }
+
+        base.Damage(damageInfo);
+    }
+
+
+    /// <summary>
+    /// instantiates the player's death effect, clears the current
+    /// weapon and activates the Dead activity
+    /// </summary>
+    public override void Die()
 	{
 
 		if (!enabled || !vp_Utility.IsActive(gameObject))

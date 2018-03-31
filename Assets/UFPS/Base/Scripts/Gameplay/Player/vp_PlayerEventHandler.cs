@@ -32,9 +32,10 @@ public class vp_PlayerEventHandler : vp_StateEventHandler
 	// player type
 	public vp_Value<bool> IsFirstPerson;	// always returns true if this a local player in 1st person mode, false if 3rd person mode or multiplayer remote player or AI
 	public vp_Value<bool> IsLocal;			// returns true if a vp_FPCamera is present on this player
-	public vp_Value<bool> IsAI;				// should return true if this player is controlled by an AI script
+	public vp_Value<bool> IsAI;             // should return true if this player is controlled by an AI script
 
-	// health
+    // health & damage
+    public vp_Message<vp_DamageInfo> BulletHit;
 	public vp_Value<float> Health;
 	public vp_Value<float> MaxHealth;
 

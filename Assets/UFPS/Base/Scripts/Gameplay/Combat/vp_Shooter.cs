@@ -244,14 +244,14 @@ public class vp_Shooter : vp_Component
 		else
 		    vp_Timer.In(SoundFireDelay, PlayFireSound);
 
-		// spawn projectiles
-		if (ProjectileSpawnDelay == 0.0f)
-			SpawnProjectiles();
-		else
-			vp_Timer.In(ProjectileSpawnDelay, delegate() { SpawnProjectiles(); });
+        // spawn projectiles
+        if (ProjectileSpawnDelay == 0.0f)
+            SpawnProjectiles();
+        else
+            vp_Timer.In(ProjectileSpawnDelay, delegate () { SpawnProjectiles(); });
 
-		// spawn shell casing
-		if (ShellEjectDelay == 0.0f)
+        // spawn shell casing
+        if (ShellEjectDelay == 0.0f)
 			EjectShell();
 		else
 			vp_Timer.In(ShellEjectDelay, EjectShell);
@@ -310,7 +310,7 @@ public class vp_Shooter : vp_Component
 		m_CurrentFirePosition = GetFirePosition();
 		m_CurrentFireRotation = GetFireRotation();
 		m_CurrentFireSeed = GetFireSeed();
-
+         
 		// when firing a single projectile per discharge (pistols, machineguns)
 		// this loop will only run once. if firing several projectiles per
 		// round (shotguns) the loop will iterate several times. the fire seed

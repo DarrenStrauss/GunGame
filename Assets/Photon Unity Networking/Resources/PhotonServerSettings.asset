@@ -72,4 +72,6 @@ MonoBehaviour:
   - Stop_Reload
   - Stop_Run
   - Stop_Zoom
+  - ForwardDamage
+  - RecieveDamage
   DisableAutoOpenWizard: 1

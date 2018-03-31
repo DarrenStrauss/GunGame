@@ -24,12 +24,9 @@
 using UnityEngine;
 using System.Collections.Generic;
 
-using RootMotion.FinalIK;
-
 public class vp_MPRemotePlayer : vp_MPNetworkPlayer
 {
-
-	// latest 'real' position, rotation and velocity received over network
+    // latest 'real' position, rotation and velocity received over network
 	protected Vector3 m_LastPosition = Vector3.zero;
 	protected Vector2 m_LastRotation = Vector2.zero;
 	protected Vector3 m_LastVelocity = Vector3.zero;
@@ -64,6 +61,10 @@ public class vp_MPRemotePlayer : vp_MPNetworkPlayer
 	protected Transform m_BulletAdjusterTransform;		// TODO: need to cache both gameobject & transform?
 	protected RaycastHit m_BulletAdjusterHit;
 	protected int m_RemoteWeaponIndex = 0;
+
+    // damage recieved
+    protected vp_DamageHandler damageHandler;
+    protected float damageRecieved = 0.0f;
 
 	// animation
 	protected bool m_IsAnimated = true;
@@ -148,6 +149,7 @@ public class vp_MPRemotePlayer : vp_MPNetworkPlayer
 		base.Awake();
 
         aimPoint = transform.Find("AimPoint");
+        damageHandler = GetComponent<vp_DamageHandler>();
     }
 
 	
@@ -315,6 +317,9 @@ public class vp_MPRemotePlayer : vp_MPNetworkPlayer
 		UpdateDebugPrimitive();
 
 		UpdateFiring();
+
+        UpdateDamageRecieved();
+        
 
 	}
 
@@ -539,15 +544,43 @@ public class vp_MPRemotePlayer : vp_MPNetworkPlayer
 
 	}
 
+    /// <summary>
+	/// sets and smooths the player's aim point
+	/// </summary>
     protected virtual void UpdateAimPoint()
     {
         aimPoint.position = Vector3.Lerp(aimPoint.position, lastAimPoint, Time.deltaTime * 5.0f);
     }
 
-	/// <summary>
-	/// 
+    /// <summary>
+	/// send the cached damage
 	/// </summary>
-	public override void FixedUpdate()
+    protected virtual void UpdateDamageRecieved()
+    {
+        if (damageRecieved > 0.0f)
+        {
+            photonView.RPC("RecieveDamage", PhotonTargets.Others, damageRecieved);
+
+            damageRecieved = 0.0f;
+        }        
+    }
+
+    /// <summary>
+	/// applies received damage
+	/// </summary>
+    [PunRPC]
+    protected virtual void RecieveDamage(float damage, PhotonMessageInfo info)
+    {
+        if (vp_Gameplay.IsMaster)
+        {
+            damageHandler.Damage(new vp_DamageInfo(damage, null, vp_DamageInfo.DamageType.Bullet));
+        }        
+    }
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public override void FixedUpdate()
 	{
 
 		base.FixedUpdate();
@@ -559,7 +592,6 @@ public class vp_MPRemotePlayer : vp_MPNetworkPlayer
 	/// </summary>
 	public override void OnPhotonSerializeView(PhotonStream stream, PhotonMessageInfo info)
     {
-		
 		if (stream.isWriting)
 			return;
 
@@ -1024,6 +1056,11 @@ public class vp_MPRemotePlayer : vp_MPNetworkPlayer
 	}
 
 	// --- locally originating player events ---
+
+    void OnMessage_BulletHit(vp_DamageInfo damageInfo)
+    {
+        damageRecieved += damageInfo.Damage;
+    }
 
 	/// <summary>
 	/// gets or sets the rotation of the camera

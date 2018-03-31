@@ -323,12 +323,20 @@ public class vp_MPLocalPlayer : vp_MPNetworkPlayer
 		base.FireWeapon(weaponIndex, position, rotation, info);
 		
 	}
-	
 
-	/// <summary>
-	/// this global event target forwards a message to the player event handler
+    /// <summary>
+	/// applies received damage on the master client
 	/// </summary>
-	void OnHUDText(Transform recipient, string text)
+    [PunRPC]
+    protected virtual void RecieveDamage(float damage, PhotonMessageInfo info)
+    {
+        vp_LocalPlayer.Damage(new vp_DamageInfo(damage, null, vp_DamageInfo.DamageType.Bullet));
+    }
+
+    /// <summary>
+    /// this global event target forwards a message to the player event handler
+    /// </summary>
+    void OnHUDText(Transform recipient, string text)
 	{
 
 		if (recipient != transform)
